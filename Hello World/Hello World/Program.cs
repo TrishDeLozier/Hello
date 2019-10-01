@@ -11,17 +11,16 @@ namespace Hello_World
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World");
-            string name = "My name is Trish";
-            Console.WriteLine(name);
+            
+            string name = "Trish";
+            
+            Console.WriteLine($"My name is {name}");
             Console.WriteLine("Write me a message: ");
-            string inputReadLine;
-            inputReadLine = Console.ReadLine();
-            Console.WriteLine("This is what you typed: " + inputReadLine);
             
-      
+            string inputReadLine = Console.ReadLine();
             
-            Console.Read();
-            
+            Console.WriteLine($"This is what you typed: {inputReadLine}");  
+            Console.ReadLine();
         }
     }
 }
